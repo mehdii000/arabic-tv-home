@@ -107,4 +107,6 @@ The companion project, [X96Q Recovery Research](https://github.com/mehdii000/x96
 
 ## License
 
-Not yet chosen.
+Original project code and documentation are licensed under the [Apache License 2.0](LICENSE).
+
+Third-party names, logos and interfaces visible in screenshots retain their respective rights. Referenced or user-supplied third-party software and samples are not covered by this license.
