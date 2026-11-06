@@ -20,7 +20,7 @@ Make watching YouTube easy from a welcoming Arabic home, with a readable clock, 
 
 ## Operating Context
 
-Home is the default launcher on an owner-cleaned Android box. Device locale is fr-FR and must remain unchanged. Firmware integrity is unverified.
+Home is the default launcher on an Android box cleaned up with the owner's authorisation (agent-performed; see the companion recovery notes). Device locale is fr-FR and must remain unchanged. Firmware integrity is unverified.
 
 ## Capabilities and Constraints
 

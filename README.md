@@ -4,7 +4,7 @@
 
 ![Arabic TV Home on the real X96Q at night: large clock, Arabic day and date, Tangier weather, and one focused YouTube card](docs/screenshots/home-night-x96q.png)
 
-My grandmother watches YouTube on a cheap X96Q Android TV box. When I looked at it closely, the box turned out to be infected with botnet malware, cluttered with vendor stores and remote-management apps, and set to the wrong date, so YouTube would not even connect. The full recovery is written up in the companion research project. This repository is the part she actually sees: what replaced the vendor launcher after the documented cleanup. Firmware integrity remains unverified.
+My grandmother watches YouTube on a cheap X96Q Android TV box. When it was investigated (with AI agents, as described below), the box turned out to be infected with botnet malware, cluttered with vendor stores and remote-management apps, and set to the wrong date, so YouTube would not even connect. The full recovery is written up in the companion research project. This repository is the part she actually sees: what replaced the vendor launcher after the documented cleanup. Firmware integrity remains unverified.
 
 The rules were simple. She turns on the TV and sees a clear, beautiful Arabic screen with the time, the day, and the weather in Tangier. There is **one** thing to do: press OK and YouTube opens. There are no app grids to choose from, no search box, and no settings she could open by accident.
 
@@ -80,7 +80,7 @@ YOUTUBE_PKG=com.google.android.youtube.tv tests/remote_test.sh <adb-serial> out/
 - `preview.py` pushes a temporary dex to `/data/local/tmp`, renders the real view tree for every state through `app_process`, checks safe area, overlap and clipping, and then deletes it. It installs nothing.
 - `remote_test.sh` drives the installed launcher with key events only and reads focus through `uiautomator`.
 
-**Recorded results (2026-11-06):** model tests passed; 24/24 remote checks on the real X96Q ([log](docs/evidence/remote-test-x96q-3.0.2.txt)), including the Settings round trip and one OK opening YouTube; 19 offscreen states and 28 sky variants on the X96Q; a real reboot back to Home with late network recovery; and an Android TV emulator cold start with no network ([log](docs/evidence/cold-start-emulator.txt)). Details and limits are in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
+**Recorded results (2026-11-06):** model tests passed; 24/24 remote checks on the real X96Q ([log](docs/evidence/remote-test-x96q-3.0.2.txt), run with the pre-export script targeting the `.tx` package), including the Settings round trip and one OK opening YouTube; 19 offscreen states and 28 sky variants on the X96Q; a real reboot back to Home with late network recovery; and an Android TV emulator cold start with no network ([log](docs/evidence/cold-start-emulator.txt)). Details and limits are in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
 
 ## Limitations
 
