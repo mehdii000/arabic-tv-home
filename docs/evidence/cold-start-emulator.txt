@@ -1,0 +1,9 @@
+network check: offline
+t+3s offline, no cache: 19:08 | مساء الخير | الجمعة | 6 نونبر 2026 | طنجة | الطقس غير متاح الآن | سيظهر عند عودة الإنترنت | يوتيوب | اضغطي للمشاهدة | OK
+t+23s offline: 19:08 | مساء الخير | الجمعة | 6 نونبر 2026 | طنجة | الطقس غير متاح الآن | سيظهر عند عودة الإنترنت | يوتيوب | اضغطي للمشاهدة | OK
+weather shown 8s after network enabled: 19:08 | مساء الخير | الجمعة | 6 نونبر 2026 | طنجة | 21° | غائم | تحديث 19:00  ·  Open-Meteo | يوتيوب | اضغطي للمشاهدة | OK
+--------- beginning of main
+--------- beginning of system
+11-06 18:08:03.314  7075  7099 W YouTubeHome: weather attempt failed: UnknownHostException
+11-06 18:08:18.323  7075  7149 W YouTubeHome: weather attempt failed: UnknownHostException
+--------- beginning of crash

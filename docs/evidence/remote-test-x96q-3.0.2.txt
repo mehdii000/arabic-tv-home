@@ -1,0 +1,33 @@
+device: X96Q / Android 10 / Physical size: 1280x720 / Physical density: 213
+launcher: versionName=3.0.2
+PASS HOME shows launcher
+PASS YouTube action focused on entry
+PASS exactly one focusable control
+PASS arrows keep focus on YouTube
+PASS BACK stays on Home
+PASS single MENU: no maintenance
+PASS double MENU: no maintenance
+PASS held MENU: no maintenance
+PASS two taps then held MENU: no maintenance
+PASS MENU,arrow,MENU,MENU: sequence reset, no maintenance
+PASS triple MENU opens maintenance with رجوع focused
+PASS BACK closes maintenance, YouTube refocused
+PASS RIGHT from رجوع stays on رجوع
+PASS UP stays inside the panel
+PASS LEFT moves to device settings
+PASS LEFT moves to weather refresh
+PASS LEFT at the end stays
+PASS RIGHT back to device settings
+Keeping existing device logs; reading launcher messages without clearing the buffer.
+PASS OK on device settings opens Settings
+11-06 19:55:06.517  2662  2662 I YouTubeHome: maintenance opened by MENU x3
+11-06 19:55:09.321  2662  2662 I YouTubeHome: settings launched: com.android.tv.settings/.MainSettings
+11-06 21:25:32.776  6451  6451 I YouTubeHome: maintenance opened by MENU x3
+11-06 21:25:43.496  6451  6451 I YouTubeHome: maintenance opened by MENU x3
+11-06 21:26:10.272  6451  6451 I YouTubeHome: settings launched: com.android.tv.settings/.MainSettings
+PASS HOME from Settings returns to launcher
+PASS YouTube focused again after returning
+PASS one OK opens patched YouTube
+PASS HOME from YouTube returns to launcher
+PASS YouTube focused on resume
+RESULT pass=24 fail=0
